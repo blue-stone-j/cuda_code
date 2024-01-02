@@ -1,0 +1,10 @@
+<launch>
+
+  <arg name="project" default="cuda_code"/>
+
+  <node pkg="$(arg project)" type="cuda_code_node" name="cuda_code_node" output="screen" respawn="false">
+  </node>
+  <!-- <node pkg="rviz" type="rviz" name="$(arg project)_rviz" args="-d $(find cuda_code)/launch/include/config/rviz.rviz">
+  </node> -->
+
+</launch>

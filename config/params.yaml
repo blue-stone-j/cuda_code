@@ -1,0 +1,39 @@
+# test #############################
+update_param: true
+
+# mine #############################
+utm_band: "S"
+utm_zone: 50
+orig_utm_x: 300632.8268 #矿山原点，东向
+orig_utm_y: 3166220.295 #矿山原点，北向
+orig_utm_z: 0.0 #矿山原点，高度
+
+# Topics
+rtk_topic: "/sensor/rtk"
+
+# func #############################
+# voxel filter paprams
+leaf_size: 0.2
+
+# other #############################
+# Export settings
+record_bag: true
+save_cloud: true # shouldbe true
+save_path: "/bag/perception_test/"
+
+# lidar ############################ 
+lidars_id:  [2] # ["front_lidar", "back_lidar"]  ["front_lidar"]  ["back_lidar"]
+lidar1:
+  sensor: hesai
+  vertical: 32
+  horizon: 1024
+lidar2:
+  sensor: hesai
+  vertical: 32
+  horizon: 1024
+lidar3:
+  sensor: hesai
+  vertical: 32
+  horizon: 1024
+
+func_mode: 1 # test
